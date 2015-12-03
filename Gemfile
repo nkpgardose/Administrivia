@@ -1,5 +1,19 @@
 source 'https://rubygems.org'
 
+gem 'bundler', '>= 1.8.4'
+# Authorization and authentication
+gem 'devise'
+# Simplify mailer styling
+gem 'hpricot'
+gem 'premailer-rails'
+# Lest worry on browser support and just write styles
+gem "autoprefixer-rails"
+
+# Managing third party assets
+source 'https://rails-assets.org' do
+  gem 'rails-assets-ionicons'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -31,16 +45,30 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-end
-
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Preview mail in the browser instead of sending
+  gem 'letter_opener'
 end
 
+group :test do
+  gem 'minitest-reporters'
+  gem 'mini_backtrace'
+  gem 'guard'
+  gem 'guard-minitest'
+end
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'puma'
+end

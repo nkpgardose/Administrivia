@@ -21,6 +21,12 @@ $ bin/rake db:schema:load # Optional -- creates dummy data
 $ bin/rails server
 ```
 
+### Optional: Test on a new terminal tab
+```sh
+$ cd Administrivia
+$ bundle exec guard # Run guard to auto run test/s
+```
+
 ## License
 
 MIT © [Neil Kim Gardose](https://github.com/nkpgardose)
