@@ -17,7 +17,7 @@ $ git clone git@github.com:nkpgardose/Administrivia.git
 $ cd Administrivia
 $ bundle install --without production # Currently in rails 4.2.5 and ruby 2.2.3
 $ bin/rake db:migrate
-$ bin/rake db:schema:load # Optional -- creates dummy data
+$ bin/rake db:fixtures:load # Optional -- creates dummy data
 $ bin/rails server
 ```
 
