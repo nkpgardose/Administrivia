@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :members
+  get 'about', to: 'static_pages#about'
+  get 'help', to: 'static_pages#help'
+  get 'kitchen-sink', to: 'static_pages#kitchen_sink'
+  root 'static_pages#landing'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
