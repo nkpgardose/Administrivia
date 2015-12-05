@@ -41,4 +41,7 @@ Rails.application.configure do
 
   # Preview email in the default browser instead of sending it
   config.action_mailer.delivery_method = :letter_opener
+
+  # Ensure to have defined default url options for develoment env
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
