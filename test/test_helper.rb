@@ -12,3 +12,7 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
   include ApplicationHelper
 end
+
+Rails.application.configure do
+  config.x.name = "Administrivia"
+end
