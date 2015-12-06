@@ -27,6 +27,12 @@ $ cd Administrivia
 $ bundle exec guard # Run guard to auto run test/s
 ```
 
+## Setup
+
+### Setup settings
+
+Custom settings are available inside the `config/initializers/administrivia.rb` file.
+
 ## License
 
 MIT © [Neil Kim Gardose](https://github.com/nkpgardose)
