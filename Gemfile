@@ -12,6 +12,8 @@ gem "autoprefixer-rails"
 # Managing third party assets
 source 'https://rails-assets.org' do
   gem 'rails-assets-ionicons'
+  gem 'rails-assets-fullcalendar'
+  gem 'rails-assets-foundation-sites'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
