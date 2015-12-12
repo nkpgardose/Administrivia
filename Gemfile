@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'bundler', '>= 1.8.4'
+# Ruby static code analyzer
+gem 'rubocop', require: false
 # Authorization and authentication
 gem 'devise'
 # Simplify mailer styling
