@@ -1,0 +1,44 @@
+// Third-party libraries
+@import "foundation-sites/vendor/normalize";
+
+// Sass utilities
+@import "foundation-sites/util/util";
+
+// Base global variables
+@import "global";
+
+// Import foundation sites components
+@import "foundation_sites_components";
+
+// Include default foundation components
+// Do not use all the assets. Use only what is needed.
+// Comment out everything else
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+// @include foundation-flex-video;
+// @include foundation-label;
+// @include foundation-media-object;
+// @include foundation-menu;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-slider;
+// @include foundation-sticky;
+
+// TODO: Import component/s below
