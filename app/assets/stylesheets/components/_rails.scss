@@ -1,0 +1,33 @@
+// Error explanation style
+#error_explanation {
+  @extend .callout;
+  @extend .alert;
+
+  h2 {
+    font-size: 1.065rem;
+  }
+}
+
+.field_with_errors > input,
+.field_with_errors > select,
+.field_with_errors > textarea {
+  border-color: $alert-color;
+
+  &:focus {
+    border-color: $alert-color;
+    box-shadow: 0 0 5px $alert-color;
+  }
+}
+
+.callout.notice {
+  @extend .callout;
+  @extend .success;
+}
+
+@include breakpoint(medium) {
+  #error_explanation {
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+}
